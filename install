@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+wget https://storage.googleapis.com/dart-archive/channels/stable/release/latest/linux_packages/dart_2.19.2-1_amd64.deb
+sudo dpkg -i dart_2.19.2-1_amd64.deb
+export PATH="$PATH:/usr/lib/dart/bin"
+make get
+make
+cd ..
+git clone https://github.com/5x5x5x5/dlox
